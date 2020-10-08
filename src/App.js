@@ -61,7 +61,7 @@ const App = () => {
 
         <TextInput
           style={styles.textInputArea}
-          placeholder="E-posta giriniz"
+          placeholder="Enter your Email address"
           keyboardType="email-address"
           value={textMail}
           onChangeText={(value) => setText(value)}
@@ -72,7 +72,7 @@ const App = () => {
         <View style={{flex: 1, flexDirection:'row', justifyContent:'center',}}>
           <TextInput
             style={styles.textInputArea}
-            placeholder="Sifre giriniz"
+            placeholder="Enter your Password"
             value={textPassword}
             secureTextEntry={pass}
             onChangeText={(value) => setPass(value)}
@@ -99,11 +99,11 @@ const App = () => {
               setPass('');
               showAlert();
             }}>
-            <Text style={styles.buttonText}>Giris Yap</Text>
+            <Text style={styles.buttonText}>Login</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.button}>
-            <Text style={styles.buttonText}>Kayit Ol</Text>
+            <Text style={styles.buttonText}>Sign Up</Text>
           </TouchableOpacity>
         </View>
       </View>
